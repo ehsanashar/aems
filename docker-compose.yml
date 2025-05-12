@@ -48,6 +48,8 @@ services:
       dockerfile: ./docker/node/Dockerfile
     container_name: node
     working_dir: /var/www/app
+    ports:
+      - "5173:5173"
     volumes:
       - ./app:/var/www/app
     networks:
